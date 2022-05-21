@@ -1,0 +1,10 @@
+{
+    "require": {
+        "jc21/clitable": "^1.2"
+    },
+	"autoload": {
+        "psr-4": {
+            "PhpRandomTest\\": "src/"
+        }
+    }
+}
