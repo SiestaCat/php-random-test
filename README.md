@@ -1,6 +1,6 @@
 # php-random-test
 
-Calculate repeat percent using multiple randomize method
+Calculate repeat percent using multiple randomize methods
 
 ```
 composer install

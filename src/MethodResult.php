@@ -2,6 +2,10 @@
 
 namespace PhpRandomTest;
 
+/**
+ * Store a result of a method
+ * @package PhpRandomTest
+ */
 class MethodResult
 {
     /**
@@ -10,6 +14,13 @@ class MethodResult
      */
     private $generations = [];
 
+    /**
+     * 
+     * @param int $generation 
+     * @param int $repeated 
+     * @param int $total_words 
+     * @return MethodResult 
+     */
     public function setRepeatedWords(int $generation, int $repeated, int $total_words): self
     {
         $this->generations[$generation] = $repeated === 0 ? 0 : ($repeated / $total_words * 100);
@@ -17,6 +28,10 @@ class MethodResult
         return $this;
     }
 
+    /**
+     * Repetition percentage
+     * @return float 
+     */
     public function getTotalPercent(): float
     {
         return array_sum($this->generations) / count($this->generations);

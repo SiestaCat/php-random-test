@@ -4,6 +4,9 @@ use PhpRandomTest\MethodInterface;
 use jc21\CliTable;
 
 require_once 'vendor/autoload.php';
+/**
+ * @var string[]
+ */
 $methods = require 'methods.php';
 
 set_time_limit(0);
@@ -39,7 +42,7 @@ $table = new CliTable;
 $table->setTableColor('red');
 $table->setHeaderColor('red');
 $table->addField('Generations', 'generations');
-$table->addField('Words per generataion', 'words_per_generation');
+$table->addField('Words per generation', 'words_per_generation');
 $table->addField('Total words', 'total_words');
 $table->addField('Word length', 'word_length');
 $table->injectData

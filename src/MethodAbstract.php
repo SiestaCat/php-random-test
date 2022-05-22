@@ -2,10 +2,20 @@
 
 namespace PhpRandomTest;
 
-
+/**
+ * Abstract methods functions
+ * @package PhpRandomTest
+ */
 class MethodAbstract
 {
 
+    /**
+     * @param int $generations 
+     * @param int $words_per_generation 
+     * @param int $word_length 
+     * @param callable $random 
+     * @return MethodResult 
+     */
     protected function _calculate(int $generations, int $words_per_generation, int $word_length, callable $random) :MethodResult
     {
 

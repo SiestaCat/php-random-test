@@ -6,6 +6,9 @@ use PhpRandomTest\MethodAbstract;
 use PhpRandomTest\MethodInterface;
 use PhpRandomTest\MethodResult;
 
+/**
+ * @package PhpRandomTest\Method
+ */
 class MethodCustom1 extends MethodAbstract implements MethodInterface
 {
 
